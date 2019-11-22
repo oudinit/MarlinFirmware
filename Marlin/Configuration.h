@@ -537,6 +537,9 @@
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
   // 24V
+  #define DEFAULT_bedKp 281.58
+  #define DEFAULT_bedKi 35.88
+  #define DEFAULT_bedKd 552.48
 
 #endif // PIDTEMPBED
 
@@ -798,7 +801,7 @@
  *
  * See https://github.com/synthetos/TinyG/wiki/Jerk-Controlled-Motion-Explained
  */
-//#define S_CURVE_ACCELERATION
+#define S_CURVE_ACCELERATION
 
 //===========================================================================
 //============================= Z Probe Options =============================
